@@ -1,0 +1,45 @@
+body{
+    width: 960px;
+    background-color: #D05A00;
+    font-family: Arial;
+}
+nav ul{
+    display: inline;
+    padding: 20px;
+    font-family: font1 ,Arial,sans-serif;
+    font-size: 20px;
+}
+nav{
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    padding:5px;
+    background-color: black;
+}
+
+div {
+    text-align: center;
+    display: none;
+    width: 300px;
+    margin:auto;
+}
+#menu{
+    text-align: left;
+    margin:unset;
+    float: left;
+    flex-grow: 1;
+}
+
+a:hover{
+    color:white;
+}
+img {
+    display:inline;
+    width:300px;
+    height:auto;
+    margin:auto;
+    border-radius: 50px 50px 50px 50px;
+}
+nav a:hover{
+    color:indianred;
+}

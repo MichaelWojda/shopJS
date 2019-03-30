@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wymień swój paragon na punkty</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="mainScript.js"></script>
+</head>
+<body>
+<nav id="nav">
+    <ul><a onclick="showCreateUserPanel()">Dodaj użytkownika</a></ul>
+    <ul><a onclick="showLoginPanel()">Zaloguj</a></ul>
+</nav>
+<div id="log" class="divy">
+    <fieldset>
+        <legend>Logowanie</legend>
+        Login:<br>
+        <input type="text" name="Login" id="login"><br>
+        Hasło:<br>
+        <input type="password" name="Hasło" id="logPass"><br><br>
+        <input type="submit" value="Zaloguj" onclick="loginFunction()">
+    </fieldset></div>
+
+<div id="create" class="divy">
+    <fieldset>
+        <legend>Dodaj użytkownika</legend>
+        Login:<br>
+        <input type="text" name="Imię" id="addLog"><br>
+        Hasło:<br>
+        <input type="text" name="Nazwisko"  id="setPass"><br><br>
+        <input type="submit" value="Dodaj" onclick="addUser()">
+    </fieldset></div>
+
+<div id="menu">
+    <ul><a onclick="showAddReceipt()">Dodaj paragon</a></ul>
+    <ul><a onclick="showShop()">Sklep</a></ul>
+    <ul><a onclick="showAccount()">Dane uzytkownika</a></ul>
+    <ul><a onclick="logOut()">Wyloguj</a></ul>
+</div>
+
+<div id="add" class="divy">
+    <fieldset>
+        <legend>Dodaj paragon</legend>
+        Wpisz numer:<br>
+        <input type="number" name="AddTicket" id="addTicket"><br>
+        <input type="submit" value="Dodaj Paragon" onclick="addPoints()">
+        <p id="addBalance"></p>
+    </fieldset></div>
+
+<div id="shop" class="divy">
+
+        <legend>Wybierz nagrodę</legend>
+        <p id="chooseBalance"></p>
+        <img src="pilka.jpg" id="ballImg">
+        <input type="submit" value="Kup za 1000 punktów" onclick="buyBall()" id="ballButton">
+        <img src="rower.jpg" id="bikeImg">
+        <input type="submit" value="Kup za 5000 punktów" onclick="buyBike()" id="bikeButton">
+        <img src="komputer.jpg" id="computerImg">
+        <input type="submit" value="Kup za 10000 punktów" onclick="buyComputer()" id="computerButton">
+</div>
+<div id="account" class="divy">
+    <p id="about"></p>
+</div>
+
+</body>
+</html>
